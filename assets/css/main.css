@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&family=Raleway:ital,wght@1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: #ffaeae; }
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  height: 12vh;
+  width: 100%; }
+  header .hdiv__h1 {
+    color: #FFAEAE;
+    font-size: 3em;
+    padding-left: 15rem; }
+  header #btn-menu {
+    display: none; }
+  header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px; }
+    header label:hover {
+      cursor: pointer; }
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40rem; }
+    header nav .hdiv__ul {
+      display: flex;
+      gap: 2rem;
+      font-size: 2.5em; }
+      header nav .hdiv__ul__li a {
+        transition: 1s; }
+        header nav .hdiv__ul__li a:hover {
+          text-decoration: solid;
+          border-bottom: 2px solid #FFAEAE;
+          color: #a16868; }
+
+.index__main {
+  background-color: #FFAEAE;
+  width: 100%;
+  overflow: visible; }
+  .index__main .index__contenido {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    padding-left: 15rem;
+    padding-top: 5rem;
+    height: 76vh;
+    position: relative; }
+    .index__main .index__contenido .texto {
+      grid-column: 1 / 20;
+      grid-row: 1 / 6; }
+      .index__main .index__contenido .texto .index__h2 {
+        font-size: 3.5em;
+        padding-bottom: 3rem; }
+      .index__main .index__contenido .texto .index__p {
+        font-size: 1.6em;
+        max-width: 50%; }
+    .index__main .index__contenido .index__picture {
+      margin-left: 1rem;
+      padding-right: 20rem;
+      grid-column: 7 / 9;
+      grid-row: 1 / 3; }
+
+.footer {
+  background-color: black;
+  height: 12vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 60rem;
+  padding: 3rem; }
+  .footer__p {
+    color: #FFAEAE;
+    font-size: 2em; }
+  .footer__rs {
+    display: flex; }

@@ -1,0 +1,45 @@
+header{
+    background-color: $secondary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    height: 12vh;
+    width: 100%;
+    .hdiv__h1{
+        color: $primary;
+        font-size: 3em;
+        padding-left: 15rem;
+    }
+    #btn-menu{
+        display: none;
+    }
+    label{
+        display: none;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;   
+        gap: 40rem;
+        .hdiv__ul{
+            display: flex;
+            gap: 2rem;
+            font-size: 2.5em;
+            &__li a{
+                transition: 1s;
+                &:hover{
+                    text-decoration: solid;
+                    border-bottom: 2px solid $primary;
+                    color: $alternative;
+                }
+            }
+        }
+    }
+}
