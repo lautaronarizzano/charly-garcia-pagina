@@ -1,0 +1,54 @@
+.gira__main{
+    background-color: $primary;
+    width: 100%;
+    height: 76vh;
+    &__section{
+        background-color: $primary;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__picture{
+            width: 80rem;
+            &__img{
+                width: 100%;
+                padding-top: 1.5rem;
+            }
+        }
+        &__div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__h2{
+                font-size: 4em;
+                display: block;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            &__div{
+                display: flex;
+                flex-direction: column;
+                &__ul{
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 2.6em;
+                    text-decoration: dotted;
+                    list-style-type: disc;
+                    &__li{
+                        text-decoration: dotted;
+                    .button{
+                        font-size: 0.9em;
+                        border-radius: 5px;
+                        width: 9rem;
+                        transition: 0.4s;
+                        &:hover{
+                            cursor: pointer;
+                            background-color: $alternative2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
