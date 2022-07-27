@@ -36,16 +36,17 @@
                     list-style-type: disc;
                     &__li{
                         text-decoration: dotted;
-                    .button{
+                    }
+                    &__button{
                         font-size: 0.9em;
                         border-radius: 5px;
                         width: 9rem;
                         transition: 0.4s;
+                        cursor: pointer;
                         &:hover{
                             cursor: pointer;
                             background-color: $alternative2;
                         }
-                    }
                 }
             }
         }

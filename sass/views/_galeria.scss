@@ -1,0 +1,75 @@
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+    .galeria__main{
+        background-color: $primary;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__section-galeria{
+            display: flex;
+            flex-direction: column;
+            &__h2{
+                display: inline;
+                font-size: 3em;
+                padding-left: 3rem;
+                padding-top: 5rem;
+            }
+            &__div{
+                width: 100%;
+                margin: 3rem;
+                display: grid;
+                grid-template-columns: repeat(3, auto);
+                gap: 2rem;
+                box-sizing: border-box;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                .elemento3{
+                    padding-right: 12rem;
+                }
+                .elemento6{
+                    padding-right: 12rem;
+                }
+            }
+        }
+        &__section-videos{
+            display: flex;
+            flex-direction: column;
+            &__h2{
+                font-size: 4em;
+            }
+            &__div{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 7rem;
+                flex-wrap: wrap;
+                &-1{
+                    display: flex;
+                    gap: 2rem;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    iframe{
+                        width: 560px;
+                        height: 315px;
+                    }
+                }
+                &-2{
+                    display: flex;
+                    gap: 2rem   ;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    iframe{
+                        width: 560px;
+                        height: 315px;
+                    }
+                }
+            }
+        }
+    }
+}
