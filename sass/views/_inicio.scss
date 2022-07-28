@@ -31,3 +31,8 @@
         }
     }
 }
+@include media (sm){
+    .index__contenido{
+        @include flex (flex, column, center, center, wrap);
+    }
+}

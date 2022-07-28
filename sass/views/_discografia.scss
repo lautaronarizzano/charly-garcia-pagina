@@ -1,11 +1,11 @@
 .discografia__main{
-    height: 76vh;
-    background-color: $primary;
+    @extend .index__main;
     padding: 0.4rem;
     @include flex (flex, row, center, flex-start, nowrap);
     &__section{
         @include flex (flex, column, flex-start, flex-start, nowrap);
         padding-top: 5rem;
+        padding-bottom: 5rem;
         &__h2{
             font-size: 4em;
         }
@@ -22,5 +22,31 @@
                 height: 55rem;
             }
         }
+    }
+}
+@include media (xs){
+    .discografia__main__section__h2{
+        font-size: 3em;
+    }
+    .discografia__main__section__p{
+        font-size: 1.7;
+    }
+    .discografia__main__section{
+        @include flex (flex, column, center, center, wrap);
+    }
+    .discografia__main__section__div__iframe{
+        width: 25rem;
+    }
+}
+@include media (lg){
+    .discografia__main{
+        height: auto;
+        padding: 0 4rem;
+    }
+    .discografia__main__section__div{
+        @include flex (flex, column, center, center, wrap);
+    }
+    .discografia__main__section__div__iframe{
+        width: 90vw;
     }
 }

@@ -5,6 +5,7 @@ body{
     .galeria__main{
         background-color: $primary;
         @include flex( flex, column, flex-start, center, nowrap);
+        width: 100%;
         &__section-galeria{
             @include flex (flex, column, flex-start, flex-start, nowrap);
             &__h2{
@@ -58,5 +59,11 @@ body{
                 }
             }
         }
+    }
+}
+
+@include media (sm){
+    .galeria__main__section-galeria__div{
+        @include flex (flex, column, center, center, wrap);
     }
 }

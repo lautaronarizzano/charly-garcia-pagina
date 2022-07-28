@@ -43,3 +43,58 @@ header{
         }
     }
 }
+
+@include media (sm){
+    header{
+        display: flex;
+    }
+    .nav{
+        display: flex;
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+    .hdiv__h1{
+        font-size: 2em;
+    }
+    .hdiv__ul{
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+        gap: 0;
+    }
+}
+
+
+@include media (lg){
+    header{
+        display: flex;
+    }
+    header label{
+        display: block;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        gap: 25rem;
+        position: absolute;
+        background-color: black;
+        width: 10%;
+        margin-left: -70%;
+    }
+    .hdiv__h1{
+        font-size: 2em;
+    }
+    .nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        font-size: 1.6em;
+        width: 2rem;  //prueba
+    }
+    .nav li{
+        border-top: 1px solid white;
+    }
+    #btn-menu:checked ~ .nav{
+        margin: 0;
+    }
+}

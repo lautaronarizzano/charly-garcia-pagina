@@ -54,11 +54,52 @@ header {
           border-bottom: 2px solid #FFAEAE;
           color: #a16868; }
 
-.index__main, .gira__main, .contacto__main {
+@media (max-width: 640px) {
+  header {
+    display: flex; }
+  .nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem; }
+  .hdiv__h1 {
+    font-size: 2em; }
+  .hdiv__ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    gap: 0; } }
+
+@media (max-width: 992px) {
+  header {
+    display: flex; }
+  header label {
+    display: block; }
+  .nav {
+    display: flex;
+    justify-content: center;
+    gap: 25rem;
+    position: absolute;
+    background-color: black;
+    width: 10%;
+    margin-left: -70%; }
+  .hdiv__h1 {
+    font-size: 2em; }
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    font-size: 1.6em;
+    width: 2rem; }
+  .nav li {
+    border-top: 1px solid white; }
+  #btn-menu:checked ~ .nav {
+    margin: 0; } }
+
+.index__main, .gira__main, .discografia__main, .contacto__main {
   background-color: #FFAEAE;
   width: 100%;
   height: 76vh; }
-  .index__main .index__contenido, .gira__main .index__contenido, .contacto__main .index__contenido {
+  .index__main .index__contenido, .gira__main .index__contenido, .discografia__main .index__contenido, .contacto__main .index__contenido {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -67,20 +108,28 @@ header {
     padding-top: 5rem;
     height: 76vh;
     position: relative; }
-    .index__main .index__contenido .texto, .gira__main .index__contenido .texto, .contacto__main .index__contenido .texto {
+    .index__main .index__contenido .texto, .gira__main .index__contenido .texto, .discografia__main .index__contenido .texto, .contacto__main .index__contenido .texto {
       grid-column: 1 / 20;
       grid-row: 1 / 6; }
-      .index__main .index__contenido .texto .index__h2, .gira__main .index__contenido .texto .index__h2, .contacto__main .index__contenido .texto .index__h2 {
+      .index__main .index__contenido .texto .index__h2, .gira__main .index__contenido .texto .index__h2, .discografia__main .index__contenido .texto .index__h2, .contacto__main .index__contenido .texto .index__h2 {
         font-size: 4em;
         padding-bottom: 3rem; }
-      .index__main .index__contenido .texto .index__p, .gira__main .index__contenido .texto .index__p, .contacto__main .index__contenido .texto .index__p {
+      .index__main .index__contenido .texto .index__p, .gira__main .index__contenido .texto .index__p, .discografia__main .index__contenido .texto .index__p, .contacto__main .index__contenido .texto .index__p {
         font-size: 1.6em;
         max-width: 50%; }
-    .index__main .index__contenido .index__picture, .gira__main .index__contenido .index__picture, .contacto__main .index__contenido .index__picture {
+    .index__main .index__contenido .index__picture, .gira__main .index__contenido .index__picture, .discografia__main .index__contenido .index__picture, .contacto__main .index__contenido .index__picture {
       margin-left: 1rem;
       padding-right: 20rem;
       grid-column: 7 / 9;
       grid-row: 1 / 3; }
+
+@media (max-width: 640px) {
+  .index__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; } }
 
 .gira__main__section {
   background-color: #FFAEAE;
@@ -121,7 +170,8 @@ header {
         text-decoration: dotted;
         list-style-type: disc; }
         .gira__main__section__div__div__ul__li {
-          text-decoration: dotted; }
+          text-decoration: dotted;
+          padding-bottom: 0.2rem; }
         .gira__main__section__div__div__ul__button {
           font-size: 0.9em;
           border-radius: 5px;
@@ -132,9 +182,40 @@ header {
             cursor: pointer;
             background-color: #a8a3a3; }
 
+@media (max-width: 640px) {
+  .gira__main__section {
+    display: flex;
+    justify-content: center; }
+    .gira__main__section__picture {
+      width: 30rem; }
+  .gira__main__section__div__h2 {
+    font-size: 3em; }
+  .gira__main__section__div__div__ul {
+    font-size: 2.2em; } }
+
+@media (max-width: 992px) {
+  .gira__main__section {
+    display: flex;
+    justify-content: center;
+    background-color: aqua; }
+    .gira__main__section__picture {
+      width: 60rem; }
+  .gira__main__section__div__div__ul {
+    font-size: 2.6em;
+    gap: 1.5rem; } }
+
+@media (max-width: 768px) {
+  .gira__main {
+    padding: 0 4rem;
+    height: 80vh; }
+  .gira__main__section__picture {
+    width: 75vw; }
+  .gira__main__section__div__div__ul {
+    font-size: 2.3em; }
+  .gira__main__section__div__h2 {
+    font-size: 3.6em; } }
+
 .discografia__main {
-  height: 76vh;
-  background-color: #FFAEAE;
   padding: 0.4rem;
   display: flex;
   flex-direction: row;
@@ -147,7 +228,8 @@ header {
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: nowrap;
-    padding-top: 5rem; }
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
     .discografia__main__section__h2 {
       font-size: 4em; }
     .discografia__main__section__p {
@@ -165,6 +247,33 @@ header {
         width: 40rem;
         height: 55rem; }
 
+@media (max-width: 450px) {
+  .discografia__main__section__h2 {
+    font-size: 3em; }
+  .discografia__main__section__p {
+    font-size: 1.7; }
+  .discografia__main__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  .discografia__main__section__div__iframe {
+    width: 25rem; } }
+
+@media (max-width: 992px) {
+  .discografia__main {
+    height: auto;
+    padding: 0 4rem; }
+  .discografia__main__section__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  .discografia__main__section__div__iframe {
+    width: 90vw; } }
+
 body {
   max-width: 100%;
   overflow-x: hidden; }
@@ -174,7 +283,8 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    width: 100%; }
     body .galeria__main__section-galeria {
       display: flex;
       flex-direction: column;
@@ -229,6 +339,14 @@ body {
         body .galeria__main__section-videos__div-2 iframe {
           width: 560px;
           height: 315px; }
+
+@media (max-width: 640px) {
+  .galeria__main__section-galeria__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; } }
 
 .contacto__main__section {
   display: flex;

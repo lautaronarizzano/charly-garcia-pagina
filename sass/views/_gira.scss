@@ -27,6 +27,7 @@
                     list-style-type: disc;
                     &__li{
                         text-decoration: dotted;
+                        padding-bottom: 0.2rem;
                     }
                     &__button{
                         font-size: 0.9em;
@@ -44,3 +45,48 @@
     }
 }
 }
+@include media (sm){
+    .gira__main__section{
+        display: flex;
+        justify-content: center;
+        &__picture{
+            width: 30rem;
+        }
+    }
+    .gira__main__section__div__h2{
+        font-size: 3em;
+    }
+    .gira__main__section__div__div__ul{
+        font-size: 2.2em;
+    }
+}
+@include media (lg){
+    .gira__main__section{
+        display: flex;
+        justify-content: center;
+        background-color: aqua;
+        &__picture{
+            width: 60rem;
+        }
+    }
+    .gira__main__section__div__div__ul{
+        font-size: 2.6em;
+        gap: 1.5rem;
+    }
+}
+@include media (md){
+    .gira__main{
+        padding: 0 4rem;    
+        height: 80vh;
+    }
+    .gira__main__section__picture{
+        width: 75vw;
+    }
+    .gira__main__section__div__div__ul{
+        font-size: 2.3em;
+    }
+    .gira__main__section__div__h2{
+        font-size: 3.6em;
+    }
+}
+
