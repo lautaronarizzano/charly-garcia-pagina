@@ -4,12 +4,9 @@ body{
     overflow-x: hidden;
     .galeria__main{
         background-color: $primary;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex( flex, column, flex-start, center, nowrap);
         &__section-galeria{
-            display: flex;
-            flex-direction: column;
+            @include flex (flex, column, flex-start, flex-start, nowrap);
             &__h2{
                 display: inline;
                 font-size: 3em;
@@ -36,34 +33,24 @@ body{
             }
         }
         &__section-videos{
-            display: flex;
-            flex-direction: column;
+            @include flex( flex, column, flex-start, flex-start, nowrap);
             &__h2{
                 font-size: 4em;
             }
             &__div{
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-                justify-content: center;
-                align-items: center;
+                @include flex (flex, column, center, center, wrap);
                 padding-bottom: 7rem;
-                flex-wrap: wrap;
+                gap: 2rem;
                 &-1{
-                    display: flex;
+                    @include flex (flex, row, center, flex-start, wrap);
                     gap: 2rem;
-                    flex-wrap: wrap;
-                    justify-content: center;
                     iframe{
                         width: 560px;
                         height: 315px;
                     }
                 }
                 &-2{
-                    display: flex;
-                    gap: 2rem   ;
-                    flex-wrap: wrap;
-                    justify-content: center;
+                    @extend .galeria__main__section-videos__div-1;
                     iframe{
                         width: 560px;
                         height: 315px;

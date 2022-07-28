@@ -1,7 +1,7 @@
 .index__main{
     background-color: $primary;
     width: 100%;
-    overflow: visible;
+    height: 76vh;
     .index__contenido{
         display: grid;
         grid-template-columns: repeat(10, 1fr);

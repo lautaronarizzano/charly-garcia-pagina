@@ -1,0 +1,13 @@
+@mixin flex($dis, $direction, $justify, $align, $wrap){
+    display: $dis;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+@mixin media($breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint )){
+        @content;
+    }
+}

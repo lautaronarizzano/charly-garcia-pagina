@@ -2,11 +2,9 @@
     height: 76vh;
     background-color: $primary;
     padding: 0.4rem;
-    display: flex;
-    justify-content: center;
+    @include flex (flex, row, center, flex-start, nowrap);
     &__section{
-        display: flex;
-        flex-direction: column;
+        @include flex (flex, column, flex-start, flex-start, nowrap);
         padding-top: 5rem;
         &__h2{
             font-size: 4em;
@@ -16,9 +14,8 @@
             font-size: 2.3em;
         }
         &__div{
+            @include flex (flex, row, center, flex-start, nowrap);
             padding-top: 0.7rem;
-            display: flex;
-            justify-content: center;
             gap: 1rem;
             &__iframe{
                 width: 40rem;

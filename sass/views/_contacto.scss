@@ -1,9 +1,7 @@
 .contacto__main{
-    background-color: $primary;
-    height: 76vh;
+    @extend .index__main;
     &__section{
-        display: flex;
-        justify-content: center;
+        @include flex (flex, row, center, flex-start, nowrap);
         padding-top: 3rem;
         &__div-1{
             display: inline-flex;
@@ -31,8 +29,7 @@
                     padding-left: 3rem;
                     width: 50rem;
                     &__div{
-                        display: flex;
-                        flex-direction: column;
+                        @include flex (flex, column, flex-start, flex-start, nowrap);
                         &__input{
                             font-size: 1em;
                             width: 30rem;
