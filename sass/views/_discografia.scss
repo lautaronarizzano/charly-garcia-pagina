@@ -50,3 +50,8 @@
         width: 90vw;
     }
 }
+@include media (xl){
+    .discografia__main__section__div__iframe{
+        width: 30vw;
+    }
+}

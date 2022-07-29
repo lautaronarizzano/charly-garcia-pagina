@@ -53,3 +53,47 @@
         }
     }
 }
+@include media (sm){
+    .contacto__main{
+        @include flex (flex, column, center, center, wrap);
+        height: auto
+        
+    }
+    .contacto__main__section{
+        @include flex (flex, column, center, center, wrap);
+        padding-bottom: 5rem;
+    }
+    .contacto__main__section__div-1{
+        @include flex (flex, column, center, flex-start, wrap);
+        padding: 0;
+        padding-left: 2rem;
+    }
+    .contacto__main__section__div-1__h2{
+        font-size: 3em;
+    }
+    .contacto__main__section__div-1__p{
+        font-size: 1.7em;
+        width: 50%;
+    }
+    .contacto__main__section__div-2__form__fieldset__div__input{
+        width: 85vw;
+    }
+    .contacto__main__section__div-2__form__fieldset__div__input-mensaje{
+        width: 85vw;
+        height: 8vh;
+    }
+}
+@include media (lg){
+    .contacto__main{
+    @include flex (flex, column, flex-start, center, wrap);
+    }
+    .contacto__main__section{
+        @include flex (flex, column, center, center, wrap);
+        padding-bottom: 5rem;
+    }
+    .contacto__main__section__div-1{
+        @include flex (flex, column, center, flex-start, wrap);
+        padding: 0;
+        padding-left: 2rem;
+    }
+}

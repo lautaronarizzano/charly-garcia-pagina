@@ -4,7 +4,7 @@
     height: 76vh;
     .index__contenido{
         display: grid;
-        grid-template-columns: repeat(10, 1fr);
+        grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(2, 1fr);
         width: 100%;
         padding-left: 15rem;
@@ -12,7 +12,7 @@
         height: 76vh;
         position: relative;
         .texto{
-            grid-column: 1 / 20;
+            grid-column: 1 / 12;
             grid-row: 1 / 6;
             .index__h2{
                 font-size: 4em;
@@ -32,7 +32,26 @@
     }
 }
 @include media (sm){
+    .index__main{
+        height: 160vh;
+    }
     .index__contenido{
-        @include flex (flex, column, center, center, wrap);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 4rem;
+        padding-left: 8rem;
+    }
+    .index__h2{
+        font-size: 3em;
+    }
+    .index__p{
+        font-size: 1.4em;
+        width: 100vw;
+        max-width: 80%;
+    }
+    .index__img{
+        width: 30rem;
+        padding-left: 10rem;
     }
 }

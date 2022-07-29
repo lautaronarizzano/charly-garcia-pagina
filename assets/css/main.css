@@ -69,7 +69,7 @@ header {
     font-size: 1em;
     gap: 0; } }
 
-@media (max-width: 992px) {
+@media (max-width: 922px) {
   header {
     display: flex; }
   header label {
@@ -101,7 +101,7 @@ header {
   height: 76vh; }
   .index__main .index__contenido, .gira__main .index__contenido, .discografia__main .index__contenido, .contacto__main .index__contenido {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
     width: 100%;
     padding-left: 15rem;
@@ -109,7 +109,7 @@ header {
     height: 76vh;
     position: relative; }
     .index__main .index__contenido .texto, .gira__main .index__contenido .texto, .discografia__main .index__contenido .texto, .contacto__main .index__contenido .texto {
-      grid-column: 1 / 20;
+      grid-column: 1 / 12;
       grid-row: 1 / 6; }
       .index__main .index__contenido .texto .index__h2, .gira__main .index__contenido .texto .index__h2, .discografia__main .index__contenido .texto .index__h2, .contacto__main .index__contenido .texto .index__h2 {
         font-size: 4em;
@@ -124,12 +124,23 @@ header {
       grid-row: 1 / 3; }
 
 @media (max-width: 640px) {
+  .index__main, .gira__main, .discografia__main, .contacto__main {
+    height: 160vh; }
   .index__contenido {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; } }
+    padding-top: 4rem;
+    padding-left: 8rem; }
+  .index__h2 {
+    font-size: 3em; }
+  .index__p {
+    font-size: 1.4em;
+    width: 100vw;
+    max-width: 80%; }
+  .index__img {
+    width: 30rem;
+    padding-left: 10rem; } }
 
 .gira__main__section {
   background-color: #FFAEAE;
@@ -193,11 +204,10 @@ header {
   .gira__main__section__div__div__ul {
     font-size: 2.2em; } }
 
-@media (max-width: 992px) {
+@media (max-width: 922px) {
   .gira__main__section {
     display: flex;
-    justify-content: center;
-    background-color: aqua; }
+    justify-content: center; }
     .gira__main__section__picture {
       width: 60rem; }
   .gira__main__section__div__div__ul {
@@ -261,7 +271,7 @@ header {
   .discografia__main__section__div__iframe {
     width: 25rem; } }
 
-@media (max-width: 992px) {
+@media (max-width: 922px) {
   .discografia__main {
     height: auto;
     padding: 0 4rem; }
@@ -273,6 +283,10 @@ header {
     flex-wrap: wrap; }
   .discografia__main__section__div__iframe {
     width: 90vw; } }
+
+@media (max-width: 1300px) {
+  .discografia__main__section__div__iframe {
+    width: 30vw; } }
 
 body {
   max-width: 100%;
@@ -397,6 +411,63 @@ body {
             border-radius: 5px;
             width: 8rem;
             transition: 0.4s; }
+
+@media (max-width: 640px) {
+  .contacto__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto; }
+  .contacto__main__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 5rem; }
+  .contacto__main__section__div-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-left: 2rem; }
+  .contacto__main__section__div-1__h2 {
+    font-size: 3em; }
+  .contacto__main__section__div-1__p {
+    font-size: 1.7em;
+    width: 50%; }
+  .contacto__main__section__div-2__form__fieldset__div__input {
+    width: 85vw; }
+  .contacto__main__section__div-2__form__fieldset__div__input-mensaje {
+    width: 85vw;
+    height: 8vh; } }
+
+@media (max-width: 922px) {
+  .contacto__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap; }
+  .contacto__main__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 5rem; }
+  .contacto__main__section__div-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-left: 2rem; } }
 
 .footer {
   background-color: black;
