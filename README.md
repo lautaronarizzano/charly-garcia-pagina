@@ -7,4 +7,8 @@
     * Box modeling
     * Animaciones
 * Sass
+    * nesting
+    * mixins
+    * maps
+    * extends
 * Git
