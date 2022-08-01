@@ -11,18 +11,6 @@ header{
         font-size: 3em;
         padding-left: 15rem;
     }
-    #btn-menu{
-        display: none;
-    }
-    label{
-        display: none;
-        width: 30px;
-        height: 30px;
-        padding: 10px;
-        &:hover{
-            cursor: pointer;
-        }
-    }
     nav{
         display: flex;
         justify-content: space-around;
@@ -44,57 +32,34 @@ header{
     }
 }
 
-@include media (sm){
+
+
+@media (max-width: 1124px) {
     header{
-        display: flex;
-    }
-    .nav{
-        display: flex;
-        justify-content: flex-start;
-        gap: 3rem;
+        @include flex (flex, column, center, center, nowrap);
+        gap: 1.5rem;
     }
     .hdiv__h1{
-        font-size: 2em;
+        padding-right: 10rem;
     }
     .hdiv__ul{
-        display: flex;
-        flex-direction: column;
-        font-size: 1em;
-        gap: 0;
+        font-size: 1.7em !important;
     }
 }
 
-
-@include media (lg){
+@media (max-width: 500px) {
     header{
-        display: flex;
-    }
-    header label{
-        display: block;
-    }
-    .nav{
-        display: flex;
-        justify-content: center;
-        gap: 25rem;
-        position: absolute;
-        background-color: black;
-        width: 10%;
-        margin-left: -70%;
+        @include flex (flex, row, center, center, nowrap);
+        gap: 2.4rem;
     }
     .hdiv__h1{
-        font-size: 2em;
+        padding-right: 0;
     }
-    .nav ul{
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-        font-size: 1.6em;
-        width: 2rem;  //prueba
-    }
-    .nav li{
-        border-top: 1px solid white;
-    }
-    #btn-menu:checked ~ .nav{
-        margin: 0;
+    .hdiv__ul{
+        @include flex (flex, column, center, center, nowrap);
+        font-size: 1.7em !important;
+        gap: 0 !important;
+        padding-right: 17rem;
+        text-decoration: underline;
     }
 }

@@ -1,7 +1,9 @@
+
 .index__main{
     background-color: $primary;
     width: 100%;
     height: 76vh;
+    overflow-x: hidden;
     .index__contenido{
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -9,7 +11,8 @@
         width: 100%;
         padding-left: 15rem;
         padding-top: 5rem;
-        height: 76vh;
+        padding-bottom: 5rem;
+        height: auto;
         position: relative;
         .texto{
             grid-column: 1 / 12;
@@ -31,16 +34,33 @@
         }
     }
 }
-@include media (sm){
+@include media (xxl){
     .index__main{
-        height: 160vh;
+        height: auto !important;
     }
+}
+@include media (lg){
     .index__contenido{
-        display: flex;
+        display: flex !important;
         flex-wrap: wrap;
         justify-content: center;
         padding-top: 4rem;
-        padding-left: 8rem;
+        padding-left: 7rem !important;
+    }
+    .index__p{
+        font-size: 1.4em;
+        width: 100vw;
+        max-width: 90% !important;
+        margin: 0 !important;
+    }
+}
+@include media (sm){
+    .index__contenido{
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 4rem;
+        padding-left: 7rem !important;
     }
     .index__h2{
         font-size: 3em;
@@ -48,7 +68,8 @@
     .index__p{
         font-size: 1.4em;
         width: 100vw;
-        max-width: 80%;
+        max-width: 80% !important;
+        margin: 0 !important;
     }
     .index__img{
         width: 30rem;

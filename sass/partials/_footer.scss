@@ -14,3 +14,8 @@
         display: flex;
     }
 }
+@include media (xl) {
+    .footer{
+        gap: 5rem;
+    }
+}

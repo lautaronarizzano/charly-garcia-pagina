@@ -1,5 +1,6 @@
 .gira__main{
     @extend .index__main;
+    height: 76vh;
     &__section{
         background-color: $primary;
         @include flex( flex, column, center, center, nowrap);
@@ -49,6 +50,7 @@
     .gira__main__section{
         display: flex;
         justify-content: center;
+        height: auto;
         &__picture{
             width: 30rem;
         }
@@ -58,6 +60,20 @@
     }
     .gira__main__section__div__div__ul{
         font-size: 2.2em;
+    }
+}
+@include media (md){
+    .gira__main{
+        padding: 0 4rem;    
+    }
+    .gira__main__section__picture{
+        width: 75vw;
+    }
+    .gira__main__section__div__div__ul{
+        font-size: 2.3em;
+    }
+    .gira__main__section__div__h2{
+        font-size: 3.6em;
     }
 }
 @include media (lg){
@@ -71,21 +87,6 @@
     .gira__main__section__div__div__ul{
         font-size: 2.6em;
         gap: 1.5rem;
-    }
-}
-@include media (md){
-    .gira__main{
-        padding: 0 4rem;    
-        height: 80vh;
-    }
-    .gira__main__section__picture{
-        width: 75vw;
-    }
-    .gira__main__section__div__div__ul{
-        font-size: 2.3em;
-    }
-    .gira__main__section__div__h2{
-        font-size: 3.6em;
     }
 }
 

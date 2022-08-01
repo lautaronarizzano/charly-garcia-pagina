@@ -61,9 +61,23 @@ body{
         }
     }
 }
-
 @include media (sm){
+    .galeria__iframe{
+        width: 80vw !important;
+    }
+}
+@include media (md){
     .galeria__main__section-galeria__div{
-        @include flex (flex, column, center, center, wrap);
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        padding-right: 9rem;
+    }
+    .elemento3{
+        padding-right: 0rem !important;
+    }
+    .elemento6{
+        padding-right: 0rem !important;
     }
 }

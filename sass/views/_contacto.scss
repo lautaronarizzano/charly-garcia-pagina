@@ -1,8 +1,13 @@
+body{
+    background-color: $primary
+}
 .contacto__main{
     @extend .index__main;
+    height: 76vh;
     &__section{
         @include flex (flex, row, center, flex-start, nowrap);
         padding-top: 3rem;
+        padding-bottom: 5rem;
         &__div-1{
             display: inline-flex;
             flex-direction: column;
@@ -56,7 +61,6 @@
 @include media (sm){
     .contacto__main{
         @include flex (flex, column, center, center, wrap);
-        height: auto
         
     }
     .contacto__main__section{

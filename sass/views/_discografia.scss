@@ -19,7 +19,7 @@
             gap: 1rem;
             &__iframe{
                 width: 40rem;
-                height: 55rem;
+                height: 54rem;
             }
         }
     }
@@ -47,7 +47,7 @@
         @include flex (flex, column, center, center, wrap);
     }
     .discografia__main__section__div__iframe{
-        width: 90vw;
+        width: 70vw !important;
     }
 }
 @include media (xl){
