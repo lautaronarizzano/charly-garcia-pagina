@@ -54,7 +54,8 @@ header {
     flex-wrap: nowrap;
     gap: 1.5rem; }
   .hdiv__h1 {
-    padding-right: 10rem; }
+    padding-right: 3rem;
+    padding-left: 5rem !important; }
   .hdiv__ul {
     font-size: 1.7em !important; } }
 
@@ -62,7 +63,7 @@ header {
   header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
     gap: 2.4rem; }
@@ -76,7 +77,6 @@ header {
     flex-wrap: nowrap;
     font-size: 1.7em !important;
     gap: 0 !important;
-    padding-right: 17rem;
     text-decoration: underline; } }
 
 .index__main, .gira__main, .discografia__main, .contacto__main {

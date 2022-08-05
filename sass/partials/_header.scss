@@ -40,7 +40,8 @@ header{
         gap: 1.5rem;
     }
     .hdiv__h1{
-        padding-right: 10rem;
+        padding-right: $small;
+        padding-left: $medio !important;
     }
     .hdiv__ul{
         font-size: 1.7em !important;
@@ -49,7 +50,7 @@ header{
 
 @media (max-width: 500px) {
     header{
-        @include flex (flex, row, center, center, nowrap);
+        @include flex (flex, row, flex-start, center, nowrap);
         gap: 2.4rem;
     }
     .hdiv__h1{
@@ -59,7 +60,6 @@ header{
         @include flex (flex, column, center, center, nowrap);
         font-size: 1.7em !important;
         gap: 0 !important;
-        padding-right: 17rem;
         text-decoration: underline;
     }
 }
