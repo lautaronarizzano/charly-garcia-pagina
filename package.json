@@ -1,7 +1,7 @@
 {
-  "name": "sass-after",
+  "name": "proyecto-final",
   "version": "1.0.0",
-  "description": "",
+  "description": "Este es mi proyecto final de CoderHouse Desarrollo web",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "keywords": [],
-  "author": "",
+  "author": "Lautaro Narizzano",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^7.0.1",

@@ -14,10 +14,10 @@
         &__div{
             @include flex( flex, column, flex-start, center, nowrap);
             &__h2{
-                font-size: 4em;
+                font-size: $font-h2;
                 display: block;
-                padding-top: 2rem;
-                padding-bottom: 2rem;
+                padding-top: $extra-small;
+                padding-bottom: $extra-small;
             }
             &__div{
                 @include flex( flex, column, flex-start, flex-start, nowrap);
@@ -73,7 +73,7 @@
         font-size: 2.3em;
     }
     .gira__main__section__div__h2{
-        font-size: 3.6em;
+        font-size: $font-h2;
     }
 }
 @include media (lg){

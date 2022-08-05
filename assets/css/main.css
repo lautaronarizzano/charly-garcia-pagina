@@ -118,10 +118,10 @@ header {
     display: flex !important;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 5rem;
     padding-left: 7rem !important; }
   .index__p {
-    font-size: 1.4em;
+    font-size: 1.6em;
     width: 100vw;
     max-width: 90% !important;
     margin: 0 !important; } }
@@ -131,12 +131,12 @@ header {
     display: flex !important;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 5rem;
     padding-left: 7rem !important; }
   .index__h2 {
     font-size: 3em; }
   .index__p {
-    font-size: 1.4em;
+    font-size: 1.6em;
     width: 100vw;
     max-width: 80% !important;
     margin: 0 !important; }
@@ -217,7 +217,7 @@ header {
   .gira__main__section__div__div__ul {
     font-size: 2.3em; }
   .gira__main__section__div__h2 {
-    font-size: 3.6em; } }
+    font-size: 4em; } }
 
 @media (max-width: 922px) {
   .gira__main__section {
@@ -311,7 +311,7 @@ body {
       flex-wrap: nowrap; }
       body .galeria__main__section-galeria__h2 {
         display: inline;
-        font-size: 3em;
+        font-size: 4em;
         padding-left: 3rem;
         padding-top: 5rem; }
       body .galeria__main__section-galeria__div {
@@ -392,7 +392,7 @@ body {
       flex-direction: column;
       padding-left: 20rem; }
       .contacto__main__section__div-1__h2 {
-        font-size: 4rem;
+        font-size: 4em;
         display: inline; }
       .contacto__main__section__div-1__p {
         font-size: 2.4em;
@@ -493,7 +493,8 @@ body {
   justify-content: space-around;
   align-items: center;
   gap: 60rem;
-  padding: 3rem; }
+  padding: 3rem;
+  width: 100%; }
   .footer__p {
     color: #FFAEAE;
     font-size: 2em; }
