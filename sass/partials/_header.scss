@@ -3,13 +3,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: $extra-small;
     height: 12vh;
     width: 100%;
     .hdiv__h1{
         color: $primary;
         font-size: 3em;
-        padding-left: 15rem;
+        padding-left: $large;
     }
     nav{
         display: flex;
@@ -18,7 +18,7 @@ header{
         gap: 40rem;
         .hdiv__ul{
             display: flex;
-            gap: 2rem;
+            gap: $extra-small;
             font-size: 2.5em;
             &__li a{
                 transition: 1s;

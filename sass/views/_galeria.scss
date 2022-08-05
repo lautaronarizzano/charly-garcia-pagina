@@ -10,16 +10,16 @@ body{
             @include flex (flex, column, flex-start, flex-start, nowrap);
             &__h2{
                 display: inline;
-                font-size: 3em;
-                padding-left: 3rem;
-                padding-top: 5rem;
+                font-size: $font-h2;
+                padding-left: $small;
+                padding-top: $medio;
             }
             &__div{
                 width: 100%;
-                margin: 3rem;
+                margin: $small;
                 display: grid;
                 grid-template-columns: repeat(3, auto);
-                gap: 2rem;
+                gap: $extra-small;
                 box-sizing: border-box;
                 img{
                     width: 100%;
@@ -36,15 +36,15 @@ body{
         &__section-videos{
             @include flex( flex, column, flex-start, flex-start, nowrap);
             &__h2{
-                font-size: 4em;
+                font-size: $font-h2;
             }
             &__div{
                 @include flex (flex, column, center, center, wrap);
                 padding-bottom: 7rem;
-                gap: 2rem;
+                gap: $extra-small;
                 &-1{
                     @include flex (flex, row, center, flex-start, wrap);
-                    gap: 2rem;
+                    gap: $extra-small;
                     iframe{
                         width: 560px;
                         height: 315px;

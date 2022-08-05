@@ -2,27 +2,27 @@
 .index__main{
     background-color: $primary;
     width: 100%;
-    height: 76vh;
+    height: $main;
     overflow-x: hidden;
     .index__contenido{
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(2, 1fr);
         width: 100%;
-        padding-left: 15rem;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-left: $large;
+        padding-top: $medio;
+        padding-bottom: $medio;
         height: auto;
         position: relative;
         .texto{
             grid-column: 1 / 12;
             grid-row: 1 / 6;
             .index__h2{
-                font-size: 4em;
-                padding-bottom: 3rem;
+                font-size: $font-h2;
+                padding-bottom: $small;
             }
             .index__p{
-                font-size: 1.6em;
+                font-size: $font-small;
                 max-width: 50%;
             }
         }
@@ -44,11 +44,11 @@
         display: flex !important;
         flex-wrap: wrap;
         justify-content: center;
-        padding-top: 4rem;
+        padding-top: $medio;
         padding-left: 7rem !important;
     }
     .index__p{
-        font-size: 1.4em;
+        font-size: $font-small;
         width: 100vw;
         max-width: 90% !important;
         margin: 0 !important;
@@ -59,14 +59,14 @@
         display: flex !important;
         flex-wrap: wrap;
         justify-content: center;
-        padding-top: 4rem;
+        padding-top: $medio;
         padding-left: 7rem !important;
     }
     .index__h2{
-        font-size: 3em;
+        font-size: $font-medium
     }
     .index__p{
-        font-size: 1.4em;
+        font-size: $font-small;
         width: 100vw;
         max-width: 80% !important;
         margin: 0 !important;
