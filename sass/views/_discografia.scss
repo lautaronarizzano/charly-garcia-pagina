@@ -26,10 +26,10 @@
 }
 @include media (xs){
     .discografia__main__section__h2{
-        font-size: 3em;
+        font-size: $font-medium;
     }
     .discografia__main__section__p{
-        font-size: 1.7;
+        font-size: $font-medium;
     }
     .discografia__main__section{
         @include flex (flex, column, center, center, wrap);

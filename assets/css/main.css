@@ -181,7 +181,7 @@ header {
           justify-content: flex-start;
           align-items: flex-start;
           flex-wrap: nowrap;
-          font-size: 2.6em;
+          font-size: 3em;
           text-decoration: dotted;
           list-style-type: disc; }
           .gira__main__section__div__div__ul__li {
@@ -226,7 +226,7 @@ header {
     .gira__main__section__picture {
       width: 60rem; }
   .gira__main__section__div__div__ul {
-    font-size: 2.6em;
+    font-size: 3em;
     gap: 1.5rem; } }
 
 .discografia__main {
@@ -265,7 +265,7 @@ header {
   .discografia__main__section__h2 {
     font-size: 3em; }
   .discografia__main__section__p {
-    font-size: 1.7; }
+    font-size: 3em; }
   .discografia__main__section {
     display: flex;
     flex-direction: column;
