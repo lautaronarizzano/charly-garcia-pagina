@@ -1,6 +1,6 @@
 .gira__main{
     @extend .index__main;
-    height: 76vh;
+    height: auto;
     &__section{
         background-color: $primary;
         @include flex( flex, column, center, center, nowrap);

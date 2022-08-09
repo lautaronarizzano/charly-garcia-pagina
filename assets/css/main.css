@@ -145,7 +145,7 @@ header {
     padding-left: 10rem; } }
 
 .gira__main {
-  height: 76vh; }
+  height: auto; }
   .gira__main__section {
     background-color: #FFAEAE;
     display: flex;
@@ -183,7 +183,8 @@ header {
           flex-wrap: nowrap;
           font-size: 3em;
           text-decoration: dotted;
-          list-style-type: disc; }
+          list-style-type: disc;
+          padding-bottom: 5rem; }
           .gira__main__section__div__div__ul__li {
             text-decoration: dotted;
             padding-bottom: 0.2rem; }
